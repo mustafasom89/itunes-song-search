@@ -1,0 +1,253 @@
+
+
+/* App container */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #031a35;
+  border-radius: 15px;
+  background-color: #d5e2f1;
+}
+.App title{
+  margin-top: 5px;
+  font: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  border-color: rgb(131, 3, 9);
+  border-width: 15px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  background-color: #3e61ad;
+  margin: 10px;
+}
+.App h1{
+  color: #a8b2b6;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  background-color: #3e61ad;
+  border-radius: 15px;
+  border-width: 15px;
+}
+/* Search form */
+.SearchForm {
+  margin-bottom: 20px;
+  
+}
+
+.SearchForm input[type="text"] {
+  padding: 10px;
+  width: 40%;
+  border: 1px solid #5b80c0;
+  color: #3a4149;
+  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.SearchForm select{
+  padding: 10px;
+  width: 40%;
+  border: 1px solid #5b80c0;
+  color: #3a4149;
+  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SearchForm button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 160px;
+}
+
+
+
+.login,
+.logout {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  width: 100%;
+}
+
+.login {
+  background-color: #4caf50; /* Green */
+}
+
+.logout {
+  background-color: #45a049; /* Red */
+}
+
+
+.logout:hover {
+  background-color: #f44336; /* Darker green for login, darker red for logout */
+}
+/* Song list */
+.SongList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Song card */
+.SongCard {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.SongCard img {
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+}
+
+.SongCard h2 {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #0b22f0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.SongCard p {
+  margin-top: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #05691e;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.SongCard h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #034b99;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+.SongCard a {
+  display: block;
+  margin-top: 10px;
+  color: #0557d1;
+  background-color: #809dd1;
+  text-decoration: none;
+  width: 180px;
+}
+
+.SongCard a:hover {
+  text-decoration: underline;
+}
+
+.term-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.term-wrapper {
+  width: calc(33.33% - 10px); /* 33.33% width for three items per row with 10px margin */
+  margin-bottom: 20px;
+}
+
+.term-wrapper:nth-child(3n+1) {
+  margin-right: 10px; /* Add margin to every third item */
+}
+
+.term-wrapper:nth-child(3n+2) {
+  margin-right: 10px; /* Add margin to every third item */
+}
+
+.term-wrapper:last-child {
+  margin-right: 0; /* Remove margin from the last item in each row */
+}
+
+.btn {
+  /* Common button styles */
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 180px;
+}
+
+.btn-danger {
+  /* Styles for the "Remove from Favorites" button */
+  background-color: #dc3545; /* Red color */
+  color: #fff; /* White text */
+}
+
+.btn-secondary {
+  /* Styles for the "Add to Favorites" button */
+  background-color: #6c757d; /* Grey color */
+  color: #fff; /* White text */
+}
+
+.btn:hover {
+  /* Hover styles for all buttons */
+  opacity: 0.9;
+}
+
+.favorites-container {
+  background-color: #e0ecf8; /* Light grey background */
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.favorites-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 10px;
+  font-family:serif;
+  background-color: #05691e;
+  border-radius: 14px;
+  color: #a6f0d9;
+  text-align: center;
+}
+
+.favorite-term {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.favorite-term img {
+  width: 80px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+  margin-right: 1px;
+}
+
+.favorite-term p {
+  margin: 0;
+}
+
+.favorite-term button {
+  margin-left: auto; /* Push the button to the right */
+  padding: 2px 2px;
+  background-color: #ff0000; /* Blue color */
+  color: #eee5e5; /* White text */
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.favorite-term button:hover {
+  background-color: #b1053f; /* Darker blue color on hover */
+}
